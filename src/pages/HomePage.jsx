@@ -1,6 +1,6 @@
 import { useListings } from "../context/ListingsContext";
 
-export default function HomePage() {
+export default function HomePage({ category = "women" }) {
   const { listings } = useListings();
   console.log(listings);
   return (
