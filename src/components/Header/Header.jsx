@@ -4,8 +4,8 @@ import NavBtns from "./NavBtns";
 
 const Header = () => {
   return (
-    <div className="w-full fixed top-0 left-0 h-1/12 bg-white">
-      <div className="max-w-9/10 my-0 mx-auto h-full flex justify-between">
+    <div className="w-full fixed top-0 left-0 h-20 bg-white">
+      <div className="w-9/10 my-0 mx-auto h-full flex justify-between">
         <NavBtns /> {/* Btns */}
         <div className="my-auto">
           <Icon icon={BrandIcon} size={41} />
