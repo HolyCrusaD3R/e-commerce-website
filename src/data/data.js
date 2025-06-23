@@ -7,9 +7,9 @@ export const listings = [
     description:
       "Durable and comfortable pants perfect for active kids. Features reinforced knees and easy-wash fabric that keeps up with playground adventures.",
     images: [
-      "/assets/clothes/kids/pants1/pants1.jpg",
-      "/assets/clothes/kids/pants1/pants1-alt1.jpg",
-      "/assets/clothes/kids/pants1/pants1-alt2.jpg",
+      "/src/assets/clothes/kids/pants1/pants1.jpg",
+      "/src/assets/clothes/kids/pants1/pants1-alt1.jpg",
+      "/src/assets/clothes/kids/pants1/pants1-alt2.jpg",
     ],
     prices: {
       eur: 32,
@@ -26,9 +26,9 @@ export const listings = [
     description:
       "Lightweight and supportive sneakers designed for growing feet. Perfect for sports, play, and everyday adventures with non-slip soles.",
     images: [
-      "/assets/clothes/kids/shoes1/shoes1.jpg",
-      "/assets/clothes/kids/shoes1/shoes1-alt1.jpg",
-      "/assets/clothes/kids/shoes1/shoes1-alt2.jpg",
+      "/src/assets/clothes/kids/shoes1/shoes1.jpg",
+      "/src/assets/clothes/kids/shoes1/shoes1-alt1.jpg",
+      "/src/assets/clothes/kids/shoes1/shoes1-alt2.jpg",
     ],
     prices: {
       eur: 48,
@@ -45,9 +45,9 @@ export const listings = [
     description:
       "Stylish and comfortable casual shoes for everyday wear. Made with breathable materials and flexible soles for all-day comfort.",
     images: [
-      "/assets/clothes/kids/shoes2/shoes2.jpg",
-      "/assets/clothes/kids/shoes2/shoes2-alt1.jpg",
-      "/assets/clothes/kids/shoes2/shoes2-alt2.jpg",
+      "/src/assets/clothes/kids/shoes2/shoes2.jpg",
+      "/src/assets/clothes/kids/shoes2/shoes2-alt1.jpg",
+      "/src/assets/clothes/kids/shoes2/shoes2-alt2.jpg",
     ],
     prices: {
       eur: 42,
@@ -64,8 +64,8 @@ export const listings = [
     description:
       "Bright and fun graphic t-shirt made from soft, organic cotton. Features playful designs that kids love and parents trust.",
     images: [
-      "/assets/clothes/kids/tshirts1/tshirts1.jpg",
-      "/assets/clothes/kids/tshirts1/tshirts1-alt1.jpg",
+      "/src/assets/clothes/kids/tshirts1/tshirts1.jpg",
+      "/src/assets/clothes/kids/tshirts1/tshirts1-alt1.jpg",
     ],
     prices: {
       eur: 18,
@@ -82,8 +82,8 @@ export const listings = [
     description:
       "Essential cotton t-shirt in classic colors. Perfect for layering or wearing alone, designed for comfort and durability.",
     images: [
-      "/assets/clothes/kids/tshirts2/tshirts1.jpg",
-      "/assets/clothes/kids/tshirts2/tshirts1-alt1.jpg",
+      "/src/assets/clothes/kids/tshirts2/tshirts1.jpg",
+      "/src/assets/clothes/kids/tshirts2/tshirts1-alt1.jpg",
     ],
     prices: {
       eur: 15,
@@ -102,9 +102,9 @@ export const listings = [
     description:
       "Premium athletic hoodie designed for performance and style. Features moisture-wicking fabric and a comfortable fit for workouts and casual wear.",
     images: [
-      "/assets/clothes/men/hoodie1/hoodie1.jpg",
-      "/assets/clothes/men/hoodie1/hoodie1-alt1.jpg",
-      "/assets/clothes/men/hoodie1/hoodie1-alt2.jpg",
+      "/src/assets/clothes/men/hoodie1/hoodie1.jpg",
+      "/src/assets/clothes/men/hoodie1/hoodie1-alt1.jpg",
+      "/src/assets/clothes/men/hoodie1/hoodie1-alt2.jpg",
     ],
     prices: {
       eur: 65,
@@ -121,8 +121,8 @@ export const listings = [
     description:
       "Classic chino pants perfect for both casual and semi-formal occasions. Made from premium cotton blend with a comfortable modern fit.",
     images: [
-      "/assets/clothes/men/pants1/pants1.jpg",
-      "/assets/clothes/men/pants1/pants1-alt1.jpg",
+      "/src/assets/clothes/men/pants1/pants1.jpg",
+      "/src/assets/clothes/men/pants1/pants1-alt1.jpg",
     ],
     prices: {
       eur: 55,
@@ -139,9 +139,9 @@ export const listings = [
     description:
       "Crisp and professional dress shirt perfect for the office or special occasions. Features wrinkle-resistant fabric and a tailored fit.",
     images: [
-      "/assets/clothes/men/shirt1/shirt1.jpg",
-      "/assets/clothes/men/shirt1/shirt1-alt1.jpg",
-      "/assets/clothes/men/shirt1/shirt1-alt2.jpg",
+      "/src/assets/clothes/men/shirt1/shirt1.jpg",
+      "/src/assets/clothes/men/shirt1/shirt1-alt1.jpg",
+      "/src/assets/clothes/men/shirt1/shirt1-alt2.jpg",
     ],
     prices: {
       eur: 48,
@@ -158,9 +158,9 @@ export const listings = [
     description:
       "Comfortable casual shirt perfect for weekend outings and relaxed workplaces. Made from soft cotton with a relaxed fit.",
     images: [
-      "/assets/clothes/men/shirt2/shirt2.jpg",
-      "/assets/clothes/men/shirt2/shirt2-alt1.jpg",
-      "/assets/clothes/men/shirt2/shirt2-alt2.jpg",
+      "/src/assets/clothes/men/shirt2/shirt2.jpg",
+      "/src/assets/clothes/men/shirt2/shirt2-alt1.jpg",
+      "/src/assets/clothes/men/shirt2/shirt2-alt2.jpg",
     ],
     prices: {
       eur: 38,
@@ -177,9 +177,9 @@ export const listings = [
     description:
       "High-performance athletic shorts with moisture-wicking technology. Perfect for running, gym workouts, and active lifestyle.",
     images: [
-      "/assets/clothes/men/short1/short1.jpg",
-      "/assets/clothes/men/short1/short1-alt1.jpg",
-      "/assets/clothes/men/short1/short1-alt2.jpg",
+      "/src/assets/clothes/men/short1/short1.jpg",
+      "/src/assets/clothes/men/short1/short1-alt1.jpg",
+      "/src/assets/clothes/men/short1/short1-alt2.jpg",
     ],
     prices: {
       eur: 35,
@@ -198,8 +198,8 @@ export const listings = [
     description:
       "Timeless baseball cap suitable for all occasions. Features adjustable strap and premium cotton construction for lasting comfort.",
     images: [
-      "/assets/clothes/unisex/cap1/cap1.jpg",
-      "/assets/clothes/unisex/cap1/cap1-alt1.jpg",
+      "/src/assets/clothes/unisex/cap1/cap1.jpg",
+      "/src/assets/clothes/unisex/cap1/cap1-alt1.jpg",
     ],
     prices: {
       eur: 22,
@@ -216,9 +216,9 @@ export const listings = [
     description:
       "Perfect everyday t-shirt made from premium cotton. Unisex design with a comfortable fit that works for everyone.",
     images: [
-      "/assets/clothes/unisex/tee1/tee1.jpg",
-      "/assets/clothes/unisex/tee1/tee1-alt1.jpg",
-      "/assets/clothes/unisex/tee1/tee1-alt2.jpg",
+      "/src/assets/clothes/unisex/tee1/tee1.jpg",
+      "/src/assets/clothes/unisex/tee1/tee1-alt1.jpg",
+      "/src/assets/clothes/unisex/tee1/tee1-alt2.jpg",
     ],
     prices: {
       eur: 28,
@@ -237,9 +237,9 @@ export const listings = [
     description:
       "Versatile and elegant jacket perfect for professional and casual settings. Features a flattering silhouette and premium fabric blend.",
     images: [
-      "/assets/clothes/women/jacket1/jacket1.jpg",
-      "/assets/clothes/women/jacket1/jacket1-alt1.jpg",
-      "/assets/clothes/women/jacket1/jacket1-alt2.jpg",
+      "/src/assets/clothes/women/jacket1/jacket1.jpg",
+      "/src/assets/clothes/women/jacket1/jacket1-alt1.jpg",
+      "/src/assets/clothes/women/jacket1/jacket1-alt2.jpg",
     ],
     prices: {
       eur: 85,
@@ -256,9 +256,9 @@ export const listings = [
     description:
       "Stylish and comfortable jumpsuit perfect for both day and evening wear. Features a flattering fit and elegant design details.",
     images: [
-      "/assets/clothes/women/jumpsuit1/jumpsuit1.jpg",
-      "/assets/clothes/women/jumpsuit1/jumpsuit1-alt1.jpg",
-      "/assets/clothes/women/jumpsuit1/jumpsuit1-alt2.jpg",
+      "/src/assets/clothes/women/jumpsuit1/jumpsuit1.jpg",
+      "/src/assets/clothes/women/jumpsuit1/jumpsuit1-alt1.jpg",
+      "/src/assets/clothes/women/jumpsuit1/jumpsuit1-alt2.jpg",
     ],
     prices: {
       eur: 72,
@@ -275,9 +275,9 @@ export const listings = [
     description:
       "Trendy high-waist pants that combine comfort with style. Perfect for office wear or casual outings with a flattering silhouette.",
     images: [
-      "/assets/clothes/women/pants1/pants1.jpg",
-      "/assets/clothes/women/pants1/pants1-alt1.jpg",
-      "/assets/clothes/women/pants1/pants1-alt2.jpg",
+      "/src/assets/clothes/women/pants1/pants1.jpg",
+      "/src/assets/clothes/women/pants1/pants1-alt1.jpg",
+      "/src/assets/clothes/women/pants1/pants1-alt2.jpg",
     ],
     prices: {
       eur: 52,
@@ -294,8 +294,8 @@ export const listings = [
     description:
       "Classic blouse with modern touches. Perfect for professional settings or dressed-up casual occasions with comfortable fabric.",
     images: [
-      "/assets/clothes/women/shirt1/shirt1.jpg",
-      "/assets/clothes/women/shirt1/shirt1-alt1.jpg",
+      "/src/assets/clothes/women/shirt1/shirt1.jpg",
+      "/src/assets/clothes/women/shirt1/shirt1-alt1.jpg",
     ],
     prices: {
       eur: 45,
@@ -312,9 +312,9 @@ export const listings = [
     description:
       "Soft and warm sweater perfect for cooler weather. Features a comfortable fit and timeless design that pairs well with any outfit.",
     images: [
-      "/assets/clothes/women/sweater1/sweater1.jpg",
-      "/assets/clothes/women/sweater1/sweater1-alt1.jpg",
-      "/assets/clothes/women/sweater1/sweater1-alt2.jpg",
+      "/src/assets/clothes/women/sweater1/sweater1.jpg",
+      "/src/assets/clothes/women/sweater1/sweater1-alt1.jpg",
+      "/src/assets/clothes/women/sweater1/sweater1-alt2.jpg",
     ],
     prices: {
       eur: 58,

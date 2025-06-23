@@ -1,7 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Layout from "./layout/Layout";
 import HomePage from "./pages/HomePage";
 // import AboutPage from "./pages/AboutPage";
+
+import { ListingsProvider } from "./context/ListingsContext";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +19,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <ListingsProvider>
+      <RouterProvider router={router} />
+    </ListingsProvider>
+  );
 }
 
 export default App;
