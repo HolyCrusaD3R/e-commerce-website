@@ -1,11 +1,13 @@
-import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+
+const router = createBrowserRouter([
+  { path: "/", element: <HomePage /> },
+  // { path: '/about', element: <AboutPage/> }
+]);
 
 function App() {
-  return (
-    <>
-      <div className="w-20 h-20 bg-amber-700 rounded-4xl"></div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
