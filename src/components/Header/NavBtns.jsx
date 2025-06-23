@@ -3,9 +3,9 @@ import NavBtn from "../UI/NavBtn";
 const NavBtns = () => {
   return (
     <div className="flex">
-      <NavBtn to="/women" />
-      <NavBtn to="/men" />
-      <NavBtn to="/kids" />
+      <NavBtn to="/women">Women</NavBtn>
+      <NavBtn to="/men">Men</NavBtn>
+      <NavBtn to="/kids">Kids</NavBtn>
     </div>
   );
 };

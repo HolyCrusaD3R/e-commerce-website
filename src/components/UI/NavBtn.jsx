@@ -1,13 +1,20 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-const NavBtn = ({ to = "/" }) => {
+const NavBtn = ({ to = "/", children }) => {
   return (
-    <Link
+    <NavLink
       to={to}
-      className="h-full text-center px-4 flex flex-col justify-center text-c-primary border-b-2 border-transparent hover:border-c-primary transition-all"
+      className={({ isActive }) =>
+        `h-full px-4 flex items-center font-semibold border-b-2 transition-all ${
+          isActive
+            ? "text-c-primary border-c-primary"
+            : "text-c-primary border-transparent hover:border-c-primary"
+        }`
+      }
     >
-      link
-    </Link>
+      {children}
+    </NavLink>
   );
 };
 
