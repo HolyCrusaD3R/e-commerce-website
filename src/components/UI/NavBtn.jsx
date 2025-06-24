@@ -9,7 +9,7 @@ const NavBtn = ({ to = "/", children }) => {
         `h-full px-4 flex items-center font-semibold border-b-2 transition-all ${
           isActive
             ? "text-c-primary border-c-primary"
-            : "text-c-primary border-transparent hover:border-c-primary"
+            : "border-transparent hover:border-c-primary"
         }`
       }
     >

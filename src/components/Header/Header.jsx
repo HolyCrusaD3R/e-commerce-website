@@ -1,15 +1,16 @@
 import Icon from "../UI/Icon";
 import BrandIcon from "../../assets/Brandicon.svg";
 import NavBtns from "./NavBtns";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="w-full fixed top-0 left-0 h-20 bg-white">
       <div className="w-9/10 my-0 mx-auto h-full flex justify-between">
         <NavBtns /> {/* Btns */}
-        <div className="my-auto">
+        <NavLink to={"/"} className="my-auto">
           <Icon icon={BrandIcon} size={41} />
-        </div>
+        </NavLink>
         <div className="my-auto"></div> {/* Optns */}
       </div>
     </div>
