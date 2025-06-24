@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useCurrency } from "../../context/CurrencyContext";
+import { symbols } from "../../data/currencySymbols";
 
 const Listing = ({ listing }) => {
+  const { currency } = useCurrency();
   return (
     <Link
       to={`/listing/${listing.id}`}
@@ -16,9 +19,9 @@ const Listing = ({ listing }) => {
           {listing.company} {listing.title}
         </p>
         <p className="text-[18px]/[1.6] text-c-black font-semibold">
-          €{listing.prices.eur.toFixed(2)}
-        </p>{" "}
-        {/* TODO currency */}
+          {symbols[currency]}
+          {listing.prices[currency].toFixed(2)}
+        </p>
       </div>
     </Link>
   );

@@ -2,6 +2,7 @@ import Icon from "../UI/Icon";
 import BrandIcon from "../../assets/icons/Brandicon.svg";
 import NavBtns from "./NavBtns";
 import { NavLink } from "react-router-dom";
+import CurrencyChanger from "../UI/CurrencyChanger";
 
 const Header = () => {
   return (
@@ -11,7 +12,10 @@ const Header = () => {
         <NavLink to={"/"} className="my-auto">
           <Icon icon={BrandIcon} size={41} />
         </NavLink>
-        <div className="my-auto"></div> {/* Optns */}
+        <div className="my-auto">
+          <CurrencyChanger />
+        </div>{" "}
+        {/* Optns */}
       </div>
     </div>
   );

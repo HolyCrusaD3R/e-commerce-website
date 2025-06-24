@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 // import AboutPage from "./pages/AboutPage";
 
 import { ListingsProvider } from "./context/ListingsContext";
+import { CurrencyProvider } from "./context/CurrencyContext";
 
 const router = createBrowserRouter([
   {
@@ -22,9 +23,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <ListingsProvider>
-      <RouterProvider router={router} />
-    </ListingsProvider>
+    <CurrencyProvider>
+      <ListingsProvider>
+        <RouterProvider router={router} />
+      </ListingsProvider>
+    </CurrencyProvider>
   );
 }
 

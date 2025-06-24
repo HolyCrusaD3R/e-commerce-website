@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 
 function Layout() {
   return (
-    <div className="font-raleway">
+    <div className="font-raleway text-c-black">
       <Header />
       <main>
         <Outlet />
