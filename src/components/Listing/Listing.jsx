@@ -22,15 +22,15 @@ const Listing = ({ listing }) => {
           alt={listing.title}
           className="w-full aspect-square object-cover object-center"
         />
-        <div className="rounded-[50px] p-4 bg-c-primary w-fit absolute bottom-0 right-0 translate-y-1/2 hidden group-hover:flex items-center justify-center">
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              handleAddToCart(listing.id, listing.sizes[0]);
-            }}
-            className="p-0 m-0 border-none bg-transparent cursor-pointer"
-          >
+        <div
+          className="rounded-[50px] p-4 bg-c-primary w-fit absolute bottom-0 right-0 translate-y-1/2 hidden group-hover:flex items-center justify-center"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            handleAddToCart(listing.id, listing.sizes[0]);
+          }}
+        >
+          <button className="p-0 m-0 border-none bg-transparent cursor-pointer">
             <Icon icon={ShoppingCartWhite} size={24} />
           </button>
         </div>

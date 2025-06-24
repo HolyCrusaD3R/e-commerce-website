@@ -4,11 +4,13 @@ import { useCart } from "../../context/CartContext";
 import { symbols } from "../../data/currencySymbols";
 import CartBtnSm from "./CartBtnSm";
 import CartBtnXl from "./CartBtnXl";
+import { useCartUI } from "../../context/CartUIContext";
 
 const CartDropdown = () => {
   const { listings } = useListings();
   const { currency } = useCurrency();
   const { cart, updateQuantity, updateSize } = useCart();
+  const { closeCartDropdown } = useCartUI();
 
   const handleIncrementQuantity = (id, size, quantity) => {
     updateQuantity(id, size, quantity + 1);
@@ -27,7 +29,7 @@ const CartDropdown = () => {
       <p>
         <strong>My Bag,</strong> {cart.length} items
       </p>
-      <ul className="list-none mt-8 flex flex-col gap-4">
+      <ul className="list-none mt-8 flex flex-col gap-4 max-h-120 overflow-y-auto">
         {cart.map((el) => {
           const listing = listings.find((item) => item.id === el.id);
           return (
@@ -100,6 +102,7 @@ const CartDropdown = () => {
         <p className="text-xl">Total</p>
         <p>
           <strong>
+            {symbols[currency]}
             {cart
               .reduce((total, item) => {
                 const listing = listings.find((l) => l.id === item.id);
@@ -111,10 +114,12 @@ const CartDropdown = () => {
         </p>
       </div>
       <div className="flex flex-row justify-between pt-10">
-        <CartBtnXl to={"/cart"} ghost={true}>
+        <CartBtnXl to={"/cart"} ghost={true} onClick={closeCartDropdown}>
           View Bag
         </CartBtnXl>
-        <CartBtnXl to={"/checkout"}>Check out</CartBtnXl>
+        <CartBtnXl to={"/checkout"} onClick={closeCartDropdown}>
+          Check out
+        </CartBtnXl>
       </div>
     </div>
   );

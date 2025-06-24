@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-const CartBtnSm = ({ activeOnMount = false, onClick, children }) => {
+const CartBtnSm = ({
+  activeOnMount = false,
+  onClick,
+  children,
+  textSize = "text-sm",
+}) => {
   const [active, setActive] = useState(activeOnMount);
   return (
     <div
@@ -8,7 +13,8 @@ const CartBtnSm = ({ activeOnMount = false, onClick, children }) => {
         active || activeOnMount
           ? "bg-c-black text-white"
           : "bg-transparent text-c-black"
-      }`}
+      }
+        ${textSize === "text-sm" ? "text-sm" : textSize}`}
       onMouseDown={() => setActive(true)}
       onMouseUp={() => setActive(false)}
       onClick={onClick}
