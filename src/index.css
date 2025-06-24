@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-c-primary: #5ece7b;
   --color-c-black: #1d1f22;
   --font-raleway: "Raleway", sans-sarif;
+  --font-roboto: "Roboto", sans-sarif;
 }
