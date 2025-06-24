@@ -16,7 +16,7 @@ const Listing = ({ listing }) => {
           {listing.company} {listing.title}
         </p>
         <p className="text-[18px]/[1.6] text-c-black font-semibold">
-          €{listing.prices.eur}
+          €{listing.prices.eur.toFixed(2)}
         </p>{" "}
         {/* TODO currency */}
       </div>
