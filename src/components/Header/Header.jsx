@@ -1,5 +1,5 @@
 import Icon from "../UI/Icon";
-import BrandIcon from "../../assets/Brandicon.svg";
+import BrandIcon from "../../assets/icons/Brandicon.svg";
 import NavBtns from "./NavBtns";
 import { NavLink } from "react-router-dom";
 
