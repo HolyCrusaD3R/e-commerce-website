@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useCurrency } from "../../context/CurrencyContext";
 
 const CurrencyChanger = () => {
-  const { setCurrency } = useCurrency();
+  const { currency, setCurrency } = useCurrency();
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleDropdownToggle = () => {
@@ -25,7 +25,7 @@ const CurrencyChanger = () => {
   return (
     <div className="relative cursor-pointer">
       <div className="flex flex-row" onClick={handleDropdownToggle}>
-        <p className="px-3">$</p>
+        <p className="px-3">{symbols[currency]}</p>
         <Icon icon={showDropdown ? UpArrow : DownArrow} size={6} />
       </div>
       <div className="absolute left-0 top-full -translate-x-1/4 py-5">
