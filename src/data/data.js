@@ -35,7 +35,7 @@ export const listings = [
       usd: 52.0,
       gel: 145.0,
     },
-    sizes: ["28", "30", "32", "34", "36"],
+    sizes: ["XS", "S", "M", "L", "XL"],
     category: "kids",
   },
   {
@@ -54,7 +54,7 @@ export const listings = [
       usd: 45.0,
       gel: 125.0,
     },
-    sizes: ["26", "28", "30", "32", "34"],
+    sizes: ["XS", "S", "M", "L", "XL"],
     category: "kids",
   },
   {
@@ -129,7 +129,7 @@ export const listings = [
       usd: 60.0,
       gel: 165.0,
     },
-    sizes: ["30", "32", "34", "36", "38", "40"],
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     category: "men",
   },
   {
@@ -206,7 +206,7 @@ export const listings = [
       usd: 25.0,
       gel: 68.0,
     },
-    sizes: ["One Size"],
+    sizes: ["M"],
     category: "unisex",
   },
   {
