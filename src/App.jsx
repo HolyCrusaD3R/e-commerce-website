@@ -15,6 +15,7 @@ import { ListingsProvider } from "./context/ListingsContext";
 import { CurrencyProvider } from "./context/CurrencyContext";
 import { CartProvider } from "./context/CartContext";
 import { CartUIProvider } from "./context/CartUIContext";
+import { CheckoutFormProvider } from "./context/CheckoutFormContext";
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,9 @@ function App() {
       <ListingsProvider>
         <CartProvider>
           <CartUIProvider>
-            <RouterProvider router={router} />
+            <CheckoutFormProvider>
+              <RouterProvider router={router} />
+            </CheckoutFormProvider>
           </CartUIProvider>
         </CartProvider>
       </ListingsProvider>
