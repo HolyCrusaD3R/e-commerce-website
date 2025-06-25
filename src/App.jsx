@@ -1,10 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "./layout/Layout";
+import CheckoutLayout from "./layout/CheckoutLayout";
+
 import HomePage from "./pages/HomePage";
 import CartPage from "./pages/CartPage";
 import ListingPage from "./pages/ListingPage";
 // import AboutPage from "./pages/AboutPage";
+import CheckoutDetailsPage from "./pages/CheckoutDetailsPage";
+import CheckoutShippingPage from "./pages/CheckoutShippingPage";
+import CheckoutPaymentPage from "./pages/CheckoutPaymentPage";
 
 import { ListingsProvider } from "./context/ListingsContext";
 import { CurrencyProvider } from "./context/CurrencyContext";
@@ -23,6 +28,15 @@ const router = createBrowserRouter([
       { path: "cart", element: <CartPage /> },
       { path: "listing/:id", element: <ListingPage /> },
       // { path: "about", element: <AboutPage /> },
+    ],
+  },
+  {
+    path: "checkout",
+    element: <CheckoutLayout />,
+    children: [
+      { index: true, element: <CheckoutDetailsPage /> },
+      { path: "shipping", element: <CheckoutShippingPage /> },
+      { path: "payment", element: <CheckoutPaymentPage /> },
     ],
   },
 ]);
