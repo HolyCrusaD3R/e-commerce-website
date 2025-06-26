@@ -15,6 +15,7 @@ export const CheckoutFormProvider = ({ children }) => {
 
     // Step 2: Shipping
     shippingMethod: "standard",
+    shippingPrice: 0,
 
     // Step 3: Payment
     cardNumber: "",

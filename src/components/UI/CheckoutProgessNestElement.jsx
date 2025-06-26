@@ -12,8 +12,6 @@ const CheckoutProgressNestElement = ({ el, children }) => {
   }
   const currIndex = steps.indexOf(currStep);
   const elIndex = steps.indexOf(el);
-  console.log(currIndex);
-  console.log(elIndex);
   let style = "text-[#616161]";
   if (currIndex === elIndex) {
     style = "text-c-black";

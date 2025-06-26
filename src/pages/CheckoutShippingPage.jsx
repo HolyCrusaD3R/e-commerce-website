@@ -29,7 +29,7 @@ const CheckoutShippingPage = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-semibold">Shipping Method</h2>
-          <ShippingInput formData={formData} updateForm={updateForm} />
+          <ShippingInput />
         </div>
         <div className="flex flex-row justify-between w-full">
           <CheckoutPrevBtn to={"/cart"}>Back to cart</CheckoutPrevBtn>
