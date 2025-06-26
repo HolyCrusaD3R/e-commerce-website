@@ -11,6 +11,7 @@ const CheckoutSummaryRight = () => {
   const { listings } = useListings();
   const { currency } = useCurrency();
   const { formData } = useCheckoutForm();
+  const location = useLocation();
   let step = location.pathname.split("/").pop();
 
   const subtotal = cart.reduce((acc, item) => {
