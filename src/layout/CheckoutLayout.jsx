@@ -3,7 +3,7 @@ import CheckoutProgressNest from "../components/CheckoutProgressNest/CheckoutPro
 
 const CheckoutLayout = () => {
   return (
-    <div className="p-20">
+    <div className="p-20 font-raleway text-c-black">
       <CheckoutProgressNest />
       <Outlet />
     </div>

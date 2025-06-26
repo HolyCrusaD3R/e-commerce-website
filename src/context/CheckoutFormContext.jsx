@@ -10,11 +10,8 @@ export const CheckoutFormProvider = ({ children }) => {
     email: "",
     phone: "",
     address: "",
-    shippingNote: "",
-    city: "",
-    postalCode: "",
-    province: "",
     country: "",
+    postalCode: "",
 
     // Step 2: Shipping
     shippingMethod: "standard",
