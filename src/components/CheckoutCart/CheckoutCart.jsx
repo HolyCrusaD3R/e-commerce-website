@@ -3,11 +3,15 @@ import { useListings } from "../../context/ListingsContext";
 import { useCurrency } from "../../context/CurrencyContext";
 import { symbols } from "../../data/currencySymbols";
 import ItemQuantity from "../UI/ItemQuantity";
+import { useCheckoutForm } from "../../context/CheckoutFormContext";
+import { useLocation } from "react-router-dom";
 
-const CheckoutSummaryRight = ({ step = "details" }) => {
+const CheckoutSummaryRight = () => {
   const { cart } = useCart();
   const { listings } = useListings();
   const { currency } = useCurrency();
+  const { formData } = useCheckoutForm();
+  let step = location.pathname.split("/").pop();
 
   const subtotal = cart.reduce((acc, item) => {
     const listing = listings.find((l) => l.id === item.id);
@@ -15,12 +19,16 @@ const CheckoutSummaryRight = ({ step = "details" }) => {
     return acc + listing.prices[currency] * item.quantity;
   }, 0);
 
+  const shippingCost =
+    step === "checkout"
+      ? 0
+      : formData.shippingPrice === 0
+      ? 0
+      : formData.shippingPrice[currency];
   const shippingNote =
-    step === "details"
+    step === "checkout"
       ? "To be calculated in the next step"
-      : symbols[currency] + "5.00";
-
-  const shippingCost = step === "details" ? 0 : 5.0; //TODO
+      : symbols[currency] + shippingCost;
 
   const grandTotal = (subtotal + shippingCost).toFixed(2);
 
@@ -57,6 +65,7 @@ const CheckoutSummaryRight = ({ step = "details" }) => {
 
                   <p className="font-bold text-xl text-c-primary">
                     {symbols[currency]}
+                    &nbsp;
                     {totalPrice.toFixed(2)}
                   </p>
                 </div>
@@ -72,6 +81,7 @@ const CheckoutSummaryRight = ({ step = "details" }) => {
           <span className="text-gray-600">Subtotal</span>
           <span className="font-medium">
             {symbols[currency]}
+            &nbsp;
             {subtotal.toFixed(2)}
           </span>
         </div>
@@ -79,18 +89,19 @@ const CheckoutSummaryRight = ({ step = "details" }) => {
         <div className="flex justify-between">
           <span className="text-gray-600">Shipping</span>
           <span className="font-medium">
-            {step === "details" ? (
+            {step === "checkout" ? (
               <span className="italic text-gray-500">{shippingNote}</span>
             ) : (
-              symbols[currency] + shippingCost.toFixed(2)
+              symbols[currency] + " " + shippingCost.toFixed(2)
             )}
           </span>
         </div>
 
         <div className="flex justify-between pt-2 border-t font-bold text-base">
-          <span>Grand Total</span>
+          <span>Total</span>
           <span className="font-bold text-4xl">
             {symbols[currency]}
+            &nbsp;
             {grandTotal}
           </span>
         </div>

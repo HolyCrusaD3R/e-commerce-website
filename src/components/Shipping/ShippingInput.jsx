@@ -23,7 +23,7 @@ const ShippingInput = () => {
         option={"Express Shipping"}
         price={expressPrices[currency]} // ✅ only pass the number
         selected={formData.shippingMethod === "express"}
-        onClick={() => handleUpdateMethod("express", expressPrices[currency])}
+        onClick={() => handleUpdateMethod("express", expressPrices)}
       />
     </div>
   );
