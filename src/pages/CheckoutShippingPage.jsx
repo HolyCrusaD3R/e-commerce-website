@@ -32,9 +32,9 @@ const CheckoutShippingPage = () => {
           <ShippingInput />
         </div>
         <div className="flex flex-row justify-between w-full">
-          <CheckoutPrevBtn to={"/cart"}>Back to cart</CheckoutPrevBtn>
+          <CheckoutPrevBtn to={"/checkout"}>Back to details</CheckoutPrevBtn>
           <CheckoutNextBtn to={"/checkout/shipping"} onClick={handleNext}>
-            Go to Shipping
+            Go to Payment
           </CheckoutNextBtn>
         </div>
       </div>
