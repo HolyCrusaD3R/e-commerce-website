@@ -14,7 +14,10 @@ import Lock from "../assets/icons/Lock.svg";
 import InfoSquare from "../assets/icons/InfoSquare.svg";
 import CheckCircle from "../assets/icons/CheckCircle.svg";
 import validatePaymentForm from "../validators/validatePaymentForm";
+import { useCart } from "../context/CartContext";
 const CheckoutPaymentPage = () => {
+  const navigate = useNavigate();
+  const { clearCart } = useCart();
   const { currency } = useCurrency();
   const { formData, updateForm } = useCheckoutForm();
   const [paid, setPaid] = useState(false);
@@ -25,8 +28,12 @@ const CheckoutPaymentPage = () => {
     cvv: null,
   });
 
+  const handleBackToShopping = () => {
+    clearCart();
+    navigate("/");
+  };
+
   const handleNext = () => {
-    console.log("test");
     const validationErrors = validatePaymentForm(formData);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -44,9 +51,9 @@ const CheckoutPaymentPage = () => {
               <Icon icon={CheckCircle} size={100} />
               <p className="font-bold text-2xl">Payment Confirmed</p>
               <p className="text-c-primary">ORDER #2039</p>
-              <NavLink to={"/"}>
+              <div onClick={handleBackToShopping}>
                 <CheckoutNextBtn to={"/"}>Back to shopping</CheckoutNextBtn>
-              </NavLink>
+              </div>
             </div>
           </div>
           <div className="w-2/5">
